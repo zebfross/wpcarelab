@@ -4,4 +4,15 @@
 @import "_variables.scss";
 @import "bootstrap/bootstrap.scss";
 @import "_bootswatch.scss";
+@import "_wptheme.scss";
 
+footer {
+    background-color: $eerie-black;
+    color: $white;
+}
+
+#footer-widget {
+    background: $wpcl-gray-sonic-silver;
+    background: linear-gradient(180deg, $wpcl-gray-sonic-silver 0%, $eerie-black 50%, $eerie-black 100%);
+    color: $white;
+}
