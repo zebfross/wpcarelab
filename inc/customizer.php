@@ -41,6 +41,7 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
         'type'    => 'select',
         'choices' => array(
             'default' => 'Default',
+            'wpcarelab' => 'WPCareLab',
             'cerulean' => 'Cerulean',
             'cosmo' => 'Cosmo',
             'cyborg' => 'Cyborg',
