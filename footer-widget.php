@@ -1,5 +1,14 @@
 <?php
 
+if ( is_front_page() && is_active_sidebar('pre-footer') ): ?>
+    <div class="pre-footer">
+        <div class="container">
+            <?php dynamic_sidebar( 'pre-footer' ); ?>
+        </div>
+    </div>
+<?php
+endif;
+
 if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) || is_active_sidebar('footer-4') ) {?>
         <div id="footer-widget" class="row m-0 <?php if(!is_theme_preset_active()){ echo 'bg-light'; } ?>">
             <div class="container">

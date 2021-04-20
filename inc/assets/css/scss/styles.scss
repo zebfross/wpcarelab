@@ -15,4 +15,76 @@ footer {
     background: $wpcl-gray-sonic-silver;
     background: linear-gradient(180deg, $wpcl-gray-sonic-silver 0%, $eerie-black 50%, $eerie-black 100%);
     color: $white;
+    padding: 50px 20px 0px 20px;
+
+    h3 {
+        color: $white;
+    }
+}
+
+.pre-footer {
+    background-color: $primary;
+    color: $white;
+    padding: 40px;
+}
+
+.wpforms-container.wpf-center {
+     margin: 0 auto !important;
+     max-width: 500px;
+
+     .wpforms-head-container {
+         text-align:center;
+     }
+}
+
+#page-sub-header {
+    background-color: $seashell;
+    
+
+    p#service-action-btn {
+        margin-top: 50px;
+    }
+}
+
+.social-icon {
+    .square {
+        background-color: $white;
+        border-radius: 8px;
+        height: 64px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 64px;
+    }
+
+    img {
+        background-color: transparent;
+        height: 20px;
+        left: 20px;
+        position: absolute;
+        top: 22px;
+        width: 24px;
+    }
+}
+
+.service-spotlight {
+    background: rgba(34,34,34, 0);
+    background: linear-gradient(90deg, $eerie-black 0%, $eerie-black 50%, $transparent-dim-gray-2 100%);
+    color: $white;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.service-spotlight .service {
+    padding: 20px;
+    color: $white;
+
+    h5 {
+        color: $white;
+    }
+}
+
+.spacer-top {
+    margin-top: 50px;
 }
