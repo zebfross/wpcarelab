@@ -5,7 +5,7 @@
   "main": "https://mylocal.com/wpcarelab",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch .\\inc\\assets\\css\\scss\\styles.scss:.\\inc\\assets\\css\\presets\\theme-option\\wpcarelab.css"
+    "sass": "sass --watch .\\scss\\styles.scss:.\\inc\\assets\\css\\presets\\theme-option\\wpcarelab.css"
   },
   "author": "Zeb Fross",
   "license": "ISC"
