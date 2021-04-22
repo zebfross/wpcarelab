@@ -8144,6 +8144,8 @@ footer {
   padding: 50px 20px 0px 20px; }
   #footer-widget h3 {
     color: #fff; }
+  #footer-widget .list-group-horizontal .list-group-item {
+    margin-right: 10px; }
 
 .pre-footer {
   background-color: #d14600;

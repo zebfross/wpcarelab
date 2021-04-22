@@ -1,4 +1,4 @@
-jQuery( function ( $ ) {
+/*jQuery( function ( $ ) {
     'use strict';
     // here for each comment reply link of WordPress
     $( '.comment-reply-link' ).addClass( 'btn btn-primary' );
@@ -75,4 +75,8 @@ jQuery( function ( $ ) {
         }, 1000, 'swing');
     });
 
-});
+});*/
+
+document.querySelector(".navbar-toggler").addEventListener("click", function (e) {
+    document.getElementById("main-nav").classList.toggle("collapse");
+})

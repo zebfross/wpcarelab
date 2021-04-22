@@ -20,6 +20,10 @@ footer {
     h3 {
         color: $white;
     }
+
+    .list-group-horizontal .list-group-item {
+        margin-right: 10px;
+    }
 }
 
 .pre-footer {

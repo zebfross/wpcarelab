@@ -38,6 +38,7 @@ $zoho.salesiq = $zoho.salesiq ||
     {},
     ready: function () {}
 };
+var timeout = window.location.pathname.indexOf("contact") > -1 ? 0 : 5000;
 setTimeout(function ()
 {
 	var d = document;
@@ -48,8 +49,8 @@ setTimeout(function ()
 	s.src = "https://salesiq.zoho.com/widget";
 	t = d.getElementsByTagName("script")[0];
 	t.parentNode.insertBefore(s, t);
-	d.body.append("<div id='zsiqwidget'></div>");
-}, 5000);
+	//d.body.append("<div id='zsiqwidget'></div>");
+}, timeout);
 </script>
 <?php wp_footer(); ?>
 </body>
