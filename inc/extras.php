@@ -46,6 +46,8 @@ add_action( 'wp_head', 'wp_bootstrap_starter_pingback_header' );
  */
 function wp_bootstrap_starter_bg_class() {
     switch (get_theme_mod( 'theme_option_setting' )) {
+        case "wpcarelab":
+            return "navbar-dark";
         case "cerulean":
             return 'navbar-dark bg-primary';
             break;

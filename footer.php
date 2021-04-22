@@ -28,6 +28,29 @@
 <?php endif; ?>
 </div><!-- #page -->
 
+<script type="text/javascript">
+
+var $zoho = $zoho || {};
+$zoho.salesiq = $zoho.salesiq ||
+{
+    widgetcode: "d2b004022068525e658558d18adea8de0f659987c310b3f1daab76679f6b1dfe",
+    values:
+    {},
+    ready: function () {}
+};
+setTimeout(function ()
+{
+	var d = document;
+	s = d.createElement("script");
+	s.type = "text/javascript";
+	s.id = "zsiqscript";
+	s.defer = true;
+	s.src = "https://salesiq.zoho.com/widget";
+	t = d.getElementsByTagName("script")[0];
+	t.parentNode.insertBefore(s, t);
+	d.body.append("<div id='zsiqwidget'></div>");
+}, 5000);
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>
