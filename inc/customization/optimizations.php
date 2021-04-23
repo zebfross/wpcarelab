@@ -260,8 +260,11 @@ function my_deregister_scripts()
     my_dequeue_script('jquery-pep');
     remove_action('wp_head', 'print_emoji_detection_script', 7);
     remove_action('wp_print_styles', 'print_emoji_styles');
+    
     // Only load stripe scripts when necessary
-    my_remove_class_action('wp_enqueue_scripts', 'AcceptStripePayments', 'enqueue_frontend_scripts_styles', 10);
+	if (!preg_match('/asp-products/', $_SERVER['REQUEST_URI'])) {
+        my_remove_class_action('wp_enqueue_scripts', 'AcceptStripePayments', 'enqueue_frontend_scripts_styles', 10);
+    }
 
     remove_action('embed_head', 'print_emoji_detection_script');
 }
