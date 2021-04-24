@@ -92,3 +92,11 @@ footer {
 .spacer-top {
     margin-top: 50px;
 }
+
+@include media-breakpoint-up(md) {
+    .subscriptions-row:first-child, .subscriptions-row:last-child {
+         .card {
+            margin-top: 35px;
+        }
+    }
+}
