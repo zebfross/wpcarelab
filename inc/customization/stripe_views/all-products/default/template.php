@@ -5,9 +5,9 @@ wp_enqueue_style( 'asp-all-products-css' );
 ob_start();
 //Page
 ?>
-<div class="wp-asp-post-grid wp-asp-grid">
+<div class="container">
 	_%search_box%_
-	<div id="wp-asp-members-list">
+	<div class="row row-cols-1 row-cols-md-3 g-4">
 		_%products_list%_
 	</div>
 	_%pagination%_
@@ -35,18 +35,23 @@ $tpl['clear_search_button'] = ' <a href="_%clear_search_url%_">' . $strClearSear
 ob_start();
 //Member item
 ?>
-<div class="wp-asp-grid-item wp-asp-product-id-%[product_id]%">
-	<div class="wp-asp-product-thumb"><img src="%[product_thumb]%"></div>
-	<div class="wp-asp-product-price">%[product_price]%</div>
-	<div class="wp-asp-product-name">%[product_name]%</div>
-	%[view_product_btn]%
+<div class="col">
+    <div class="card">
+      <img src="%[product_thumb]%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">%[product_name]%</h5>
+      </div>
+      <div class="card-footer">
+        %[view_product_btn]%
+      </div>
+    </div>
 </div>
 <?php
 $tpl['products_item']      = ob_get_clean();
 $tpl['products_list']      = '';
 $tpl['products_per_row']   = 3;
-$tpl['products_row_start'] = '<div class="wp-asp-grid-row">';
-$tpl['products_row_end']   = '</div>';
+$tpl['products_row_start'] = '';
+$tpl['products_row_end']   = '';
 ob_start();
 //Pagination
 ?>
@@ -63,6 +68,6 @@ $tpl['pagination_item'] = '<li><a href="%[url]%">%[page_num]%</a></li>';
 $tpl['pagination_item_current'] = '<li><span>%[page_num]%</span></li>';
 
 //Profile button
-$tpl['view_product_btn'] = '<div class="wp-asp-view-product-btn"><a href="%[product_url]%" class="wp-asp-view-product-lnk"><button>' . $strViewItem . '</button></a></div>';
+$tpl['view_product_btn'] = '<a href="%[product_url]%" class="btn btn-primary">' . $strViewItem . '</a>';
 
 
