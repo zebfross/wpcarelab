@@ -5,7 +5,7 @@ ob_start();
 ?>
 <div class="container product-list">
 	_%search_box%_
-	<div class="row row-cols-1 row-cols-md-3 g-4">
+	<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
 		_%products_list%_
 	</div>
 	_%pagination%_
@@ -35,7 +35,7 @@ ob_start();
 ?>
 <div class="col">
     <div class="card">
-      <div class="card-header">
+      <div class="card-header d-flex align-items-center">
         <img src="%[product_thumb]%" alt="%[product_name]%" title="%[product_name]%">
         <span class="card-title product-name">
             %[product_name]%

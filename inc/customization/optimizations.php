@@ -302,6 +302,7 @@ add_action(
         my_dequeue_script('wpforms');
         my_dequeue_script('wpforms-validation');
         my_dequeue_script('wpforms-text-limit');
+        my_dequeue_style('asp-default-style');
         // Print all loaded Scripts if in debug
         if (defined('WP_DEBUG') && WP_DEBUG && defined('WP_DEBUG_DISPLAY') && WP_DEBUG_DISPLAY) {
             global $wp_scripts;

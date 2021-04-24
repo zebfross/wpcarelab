@@ -14,7 +14,7 @@ class WPCareLabShortcodes
     }
 
     public function post_excerpt($id) {
-        return get_the_excerpt($id[0]);
+        return preg_split('/\<!\-\-snippet\-\-\>/', get_post_field('post_content', $id[0]), 2)[0];
     }
 
     public function post_title($id) {

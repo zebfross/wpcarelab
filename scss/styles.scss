@@ -21,8 +21,18 @@ footer {
         color: $white;
     }
 
+    /*social icons*/
     .list-group-horizontal .list-group-item {
         margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    a {
+        color: $white;
+    }
+
+    ul {
+        text-decoration: none;
     }
 }
 
@@ -92,9 +102,12 @@ footer {
 .product-list {
     .product-name {
         font-size: 1rem;
-        letter-spacing: 3px;
-        vertical-align: middle;
-        line-height: 5rem;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+
+    .card-header {
+        border-top: 4px solid $primary;
     }
 }
 
@@ -107,6 +120,12 @@ footer {
          .card {
             margin-top: 35px;
         }
+    }
+}
+
+.subscription-row {
+    h3, h4 {
+        text-align: center;
     }
 }
 
