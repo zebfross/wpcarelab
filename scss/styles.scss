@@ -89,6 +89,15 @@ footer {
     }
 }
 
+.product-list {
+    .product-name {
+        font-size: 1rem;
+        letter-spacing: 3px;
+        vertical-align: middle;
+        line-height: 5rem;
+    }
+}
+
 .spacer-top {
     margin-top: 50px;
 }
@@ -99,4 +108,8 @@ footer {
             margin-top: 35px;
         }
     }
+}
+
+.asp_subs_price_until_cancelled {
+    display:none;
 }

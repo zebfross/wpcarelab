@@ -1,11 +1,9 @@
 <?php
-wp_enqueue_style( 'dashicons' );
-wp_enqueue_style( 'asp-all-products-css' );
 
 ob_start();
 //Page
 ?>
-<div class="container">
+<div class="container product-list">
 	_%search_box%_
 	<div class="row row-cols-1 row-cols-md-3 g-4">
 		_%products_list%_
@@ -17,7 +15,7 @@ $tpl['page'] = ob_get_clean();
 ob_start();
 $strSearch      = __( 'Search', 'stripe-payments' );
 $strClearSearch = __( 'Clear search', 'stripe-payments' );
-$strViewItem    = __( 'View Item', 'stripe-payments' );
+$strViewItem    = __( 'View Details', 'stripe-payments' );
 //Search box
 ?>
 <form id="wp-asp-search-form" method="GET">
@@ -37,11 +35,15 @@ ob_start();
 ?>
 <div class="col">
     <div class="card">
-      <img src="%[product_thumb]%" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">%[product_name]%</h5>
+      <div class="card-header">
+        <img src="%[product_thumb]%" alt="%[product_name]%" title="%[product_name]%">
+        <span class="card-title product-name">
+            %[product_name]%
+        </span>
       </div>
-      <div class="card-footer">
+      <div class="card-body text-center">
+        <p>%[product_excerpt]%</p>
+        <h3>%[product_price]%</h3>
         %[view_product_btn]%
       </div>
     </div>

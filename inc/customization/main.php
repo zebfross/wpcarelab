@@ -21,3 +21,4 @@ function is_user_in_role($role, $user_id = null, $user = null)
 
 require_once "logging.php";
 require_once "optimizations.php";
+require_once "shortcodes.php";
