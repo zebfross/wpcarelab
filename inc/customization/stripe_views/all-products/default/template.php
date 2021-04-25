@@ -1,5 +1,5 @@
 <?php
-
+wp_enqueue_style( 'dashicons' );
 ob_start();
 //Page
 ?>

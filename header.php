@@ -91,28 +91,8 @@
                     ?>
                 </p>
                 <p id="service-action-btn">
-                    <a class="btn btn-primary" href="<?= site_url("/services") ?>">Explore Subscription Plans</a>
+                    <a class="btn btn-primary" href="<?= site_url("/services") ?>">Explore All Services</a>
                 </p>
-                <div class="row service-spotlight">
-                    <div class="col-sm-4">
-                        <div class="service">
-                            <h5 class="">Special title treatment</h5>
-                            <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service">
-                            <h5 class="">Special title treatment</h5>
-                            <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service">
-                            <h5 class="">Special title treatment</h5>
-                            <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
                 <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
             </div>
         </div>
